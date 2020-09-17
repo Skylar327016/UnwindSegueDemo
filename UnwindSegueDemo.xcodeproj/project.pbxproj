@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		949DE2B22513EC7500B1FAFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DE2B12513EC7500B1FAFC /* AppDelegate.swift */; };
 		949DE2B42513EC7500B1FAFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DE2B32513EC7500B1FAFC /* SceneDelegate.swift */; };
-		949DE2B62513EC7500B1FAFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DE2B52513EC7500B1FAFC /* ViewController.swift */; };
 		949DE2B92513EC7500B1FAFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949DE2B72513EC7500B1FAFC /* Main.storyboard */; };
 		949DE2BB2513EC7500B1FAFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949DE2BA2513EC7500B1FAFC /* Assets.xcassets */; };
 		949DE2BE2513EC7500B1FAFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949DE2BC2513EC7500B1FAFC /* LaunchScreen.storyboard */; };
+		949DE2C82513EF4D00B1FAFC /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DE2C72513EF4D00B1FAFC /* SettingTableViewController.swift */; };
+		949DE2CB2513EF9700B1FAFC /* ChangeSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DE2CA2513EF9700B1FAFC /* ChangeSettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		949DE2AE2513EC7500B1FAFC /* UnwindSegueDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnwindSegueDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		949DE2B12513EC7500B1FAFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		949DE2B32513EC7500B1FAFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		949DE2B52513EC7500B1FAFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		949DE2B82513EC7500B1FAFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		949DE2BA2513EC7500B1FAFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		949DE2BD2513EC7500B1FAFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		949DE2BF2513EC7500B1FAFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		949DE2C72513EF4D00B1FAFC /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		949DE2CA2513EF9700B1FAFC /* ChangeSettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				949DE2B12513EC7500B1FAFC /* AppDelegate.swift */,
 				949DE2B32513EC7500B1FAFC /* SceneDelegate.swift */,
-				949DE2B52513EC7500B1FAFC /* ViewController.swift */,
 				949DE2B72513EC7500B1FAFC /* Main.storyboard */,
+				949DE2CA2513EF9700B1FAFC /* ChangeSettingTableViewController.swift */,
+				949DE2C72513EF4D00B1FAFC /* SettingTableViewController.swift */,
 				949DE2BA2513EC7500B1FAFC /* Assets.xcassets */,
 				949DE2BC2513EC7500B1FAFC /* LaunchScreen.storyboard */,
 				949DE2BF2513EC7500B1FAFC /* Info.plist */,
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				949DE2B62513EC7500B1FAFC /* ViewController.swift in Sources */,
+				949DE2CB2513EF9700B1FAFC /* ChangeSettingTableViewController.swift in Sources */,
+				949DE2C82513EF4D00B1FAFC /* SettingTableViewController.swift in Sources */,
 				949DE2B22513EC7500B1FAFC /* AppDelegate.swift in Sources */,
 				949DE2B42513EC7500B1FAFC /* SceneDelegate.swift in Sources */,
 			);
