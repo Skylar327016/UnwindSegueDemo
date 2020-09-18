@@ -9,6 +9,13 @@ import UIKit
 
 class SettingTableViewController: UITableViewController {
 
+    @IBOutlet weak var autoLockLabel: UILabel!
+    @IBAction func unwindToSelectTimeIntetval(_ unwindSegue: UIStoryboardSegue) {
+        if let sourceViewController = unwindSegue.source as? ChangeSettingTableViewController {
+            autoLockLabel.text = sourceViewController.selection
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,19 +45,14 @@ class SettingTableViewController: UITableViewController {
         }else {
             return ""
         }
-        
+
     }
-    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        if section == 0 {
-            return "Automatically adapt iPhone display based on ambient lighting conditions to make colours appeat consistent in different environment."
-        } else if section == 2 {
-            return "Automatically lock and unlock your iPhone when you close and open the iPhone cover."
-        } else {
-            return ""
-        }
+
+
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? UITableViewHeaderFooterView else {return}
+        headerView.textLabel?.textColor = UIColor.gray
     }
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
-    }
+    
 
 }
