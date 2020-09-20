@@ -403,9 +403,16 @@
                             <outlet property="delegate" destination="LjC-jz-0qj" id="xen-5v-JAa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="8ob-Ua-88z"/>
+                    <navigationItem key="navigationItem" id="8ob-Ua-88z">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="0g0-cr-DIM">
+                            <connections>
+                                <segue destination="KRx-op-dAY" kind="unwind" unwindAction="unwindToSelectTimeIntetval:" id="cD7-dm-fjw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFJ-mG-4oM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="KRx-op-dAY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1439.1304347826087" y="49.553571428571423"/>
         </scene>
