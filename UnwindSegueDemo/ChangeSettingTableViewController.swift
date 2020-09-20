@@ -25,7 +25,9 @@ class ChangeSettingTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        //selections是儲存時間選項的陣列
         cell.textLabel?.text = selections[indexPath.row]
+        //selection是從第一個畫面prepare傳來的值
         if selection == selections[indexPath.row]{
             cell.accessoryType = .checkmark
         }else {
@@ -33,6 +35,7 @@ class ChangeSettingTableViewController: UITableViewController {
         }
         return cell
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selection = selections[indexPath.row]
         for cell in tableView.visibleCells{
@@ -43,8 +46,4 @@ class ChangeSettingTableViewController: UITableViewController {
 
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let controller = segue.destination as? SettingTableViewController else {return}
-//        controller.autoLockLabel.text = selection
-//    }
 }
