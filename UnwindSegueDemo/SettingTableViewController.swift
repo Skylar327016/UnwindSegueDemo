@@ -14,29 +14,11 @@ class SettingTableViewController: UITableViewController {
         if let sourceViewController = unwindSegue.source as? ChangeSettingTableViewController {
             autoLockLabel.text = sourceViewController.selection
         }
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
        
     }
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return 4
-//    }
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//
-//        if section == 0 {
-//          return 2
-//        } else if section == 1 {
-//            return 1
-//        } else if section == 2 {
-//            return 3
-//        }else if section == 3 {
-//            return 2
-//        }else {
-//            return 0
-//        }
-//    }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
@@ -52,11 +34,9 @@ class SettingTableViewController: UITableViewController {
         guard let headerView = view as? UITableViewHeaderFooterView else {return}
         headerView.textLabel?.textColor = UIColor.gray
     }
-    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        if section == 3 {
-            return 160
-        }else {
-            return 50
-        }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let controller = segue.destination as? ChangeSettingTableViewController else {return}
+        controller.selection = self.autoLockLabel.text
     }
 }
